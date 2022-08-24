@@ -24,7 +24,7 @@ export default createStore({
       state.login = payload;
     },
     UPDATE_USUARIO(state, payload) {
-      state.usuario = payload;
+      state.usuario = Object.assign(state.usuario, payload);
     }
   },
   actions: {
